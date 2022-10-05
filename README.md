@@ -14,6 +14,11 @@
 2. `yarn hardhat test`
 3. `yarn hardhat run scripts/deploy.js` or `yarn hardhat run scripts/deploy.js --network hardhat`
 
+
+## Hardhat Task Examples
+- When adding `block-number`, we should now see `block-number` as a task when running `yarn hardhat`. If we run `yarn hardhat block-number`, we should get a block number of 0 since the default network is the hardhat (your local machine) network. However, if we run `yarn hardhat block-number --network goerli`, we'll see the current block number for the Goerli network.
+- Scripts and tasks do (almost) the same thing. Tasks tend to be better for plugins, and scripts are better for your own development and deployments.
+
 ## Notes
 
 - Adding `--dev` when we do `yarn add` is for development purposes. Regular dependencies are required to run your project, dev dependencies are required to develop/build your project.

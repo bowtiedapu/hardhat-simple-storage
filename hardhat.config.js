@@ -3,6 +3,7 @@ require("@nomicfoundation/hardhat-toolbox")
 // This allows us to pull the rinkeby RPC URL from our .env
 require("dotenv").config()
 require("@nomiclabs/hardhat-etherscan")
+require("./tasks/block-number")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 

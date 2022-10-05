@@ -38,6 +38,8 @@ async function main() {
     console.log(`Update value: ${updatedValue}`)
 }
 
+// The below is (almost) the same as defining the async function verify
+// const verify = async (contractAddress, args) => { // we're just assigning a function to a variable
 async function verify(contractAddress, args) {
     console.log("Starting contract verification")
     try {
