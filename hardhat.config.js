@@ -8,10 +8,12 @@ require("hardhat-gas-reporter")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
-const PRIVATE_KEY = process.env.PRIVATE_KEY
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
-const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
+const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL || "goerli_rpc_url_default"
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "private_key_default"
+const ETHERSCAN_API_KEY =
+    process.env.ETHERSCAN_API_KEY || "etherscan_api_key_default"
+const COINMARKETCAP_API_KEY =
+    process.env.COINMARKETCAP_API_KEY || "coinmarketcap_api_key_default"
 
 module.exports = {
     defaultNetwork: "hardhat",
@@ -32,7 +34,7 @@ module.exports = {
         apiKey: ETHERSCAN_API_KEY,
     },
     gasReporter: {
-        enabled: true,
+        enabled: false,
         outputFile: "gas-report.txt",
         noColors: true, // colors can get messed up when writing to a file
         currency: "USD",
