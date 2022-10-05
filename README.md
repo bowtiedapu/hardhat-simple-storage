@@ -8,7 +8,7 @@
 4. `yarn add --dev prettier prettier-plugin-solidity`
 5. `yarn add --dev dotenv`
 
-## How to Build
+## How to Build, Run, and Deploy
 
 1. `yarn hardhat compile`
 2. `yarn hardhat test`
