@@ -19,6 +19,11 @@ module.exports = {
             accounts: [PRIVATE_KEY],
             chainId: 5,
         },
+        localhost: {
+            url: "http://127.0.0.1:8545/",
+            // No need to provide accounts here.
+            chainId: 31337, // It has the same chain ID as the hardhat network
+        },
     },
     solidity: "0.8.17",
     etherscan: {
