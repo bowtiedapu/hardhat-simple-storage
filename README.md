@@ -8,6 +8,7 @@
 4. `yarn add --dev prettier prettier-plugin-solidity`
 5. `yarn add --dev dotenv`
 6. `yarn add --dev hardhat-gas-reporter`
+7. `yarn add --dev solidity-coverage`
 
 ## How to Build, Run, and Deploy
 
@@ -21,6 +22,7 @@
 
 ## Small Tricks and Nice-to-Haves
 1. If we want to start a repl, just run `yarn hardhat console --network localhost`, or whatever the name for your local node is. In this project, we called it `localhost`
+2. To figure out your code coverage, run `yarn hardhat coverage`. Make sure you have `solidity-coverage` added and defined within your `hardhat.config.js` file.
 
 
 ## Hardhat Task Examples
