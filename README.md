@@ -15,6 +15,8 @@
 3. `yarn hardhat run scripts/deploy.js` or `yarn hardhat run scripts/deploy.js --network hardhat`
 4. Start your own node with a set of test accounts by running `yarn hardhat node`. This is different than the default hardhat network. It's using the hardhat runtime environment, but is considered your localhost.
 5. To deploy to the network started in #4, run `yarn hardhat run scripts/deploy.js --network YOUR_LOCAL_NETWORK_NAME_IN_HARDHAT_CONFIG_JS_HERE`. In this project, we called it `localhost`, so we'll just run `yarn hardhat run scripts/deploy.js --network localhost`
+6. To run tests, run `yarn hardhat test`
+7. If you would like to run a subset of the tests, run `yarn hardhat test --grep WHAT_YOU_WANT_TO_GREP_FOR_HERE`
 
 ## Small Tricks and Nice-to-Haves
 1. If we want to start a repl, just run `yarn hardhat console --network localhost`, or whatever the name for your local node is. In this project, we called it `localhost`
