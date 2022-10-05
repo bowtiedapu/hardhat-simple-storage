@@ -7,6 +7,7 @@
 3. `yarn hardhat`
 4. `yarn add --dev prettier prettier-plugin-solidity`
 5. `yarn add --dev dotenv`
+6. `yarn add --dev hardhat-gas-reporter`
 
 ## How to Build, Run, and Deploy
 
